@@ -1,0 +1,107 @@
+<!--
+  <table border="1">
+  <thead>
+     <tr>
+       <th colspan=2 >
+          Employee Details
+       </th>
+     </tr>
+ </thead>
+  <tbody>
+        <tr>
+          <td>First Name</td>
+          <td>{{firstName}}</td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>{{lastName}}</td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>{{gender}}</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>{{age}}</td>
+        </tr>
+  </tbody>
+</table> 
+
+
+<h1>class Binding</h1>
+<button class="colorClass" [class]='classesToApply'>My Button</button> <br/><br/>
+<button class="colorClass" [class.boldClass]='applyBoldClass'>My Button1</button>
+
+
+<h1>Event Binding </h1>
+<h3>Click the below button and check in the console for the output that how many times button was clicked</h3>
+<button (click)='onClick()'>Click Me</button>
+
+
+
+
+
+
+
+<table border="1">
+  <thead>
+     <tr>
+       <th colspan=2 >
+          Employee Details
+       </th>
+     </tr>
+ </thead>
+  <tbody>
+        <tr>
+          <td>First Name</td>
+          <td>{{firstName}}</td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>{{lastName}}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+          <td>Gender</td>
+          <td>{{gender}}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+          <td>Age</td>
+          <td>{{age}}</td>
+        </tr>
+  </tbody>
+</table> 
+<br/>
+<button (click)="toggleDetails()">{{showDetails ? 'Hide':'Show'}} Details</button>
+
+
+
+Name : <input   [(ngModel)]='name' />  <br/>
+The value Entered is: {{name}}
+
+
+-->
+
+Name : {{name | uppercase }} <br/>
+SurName: {{lastName | uppercase }} <br/>
+Date of Birth : {{ date | date }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
